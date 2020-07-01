@@ -13,3 +13,107 @@ Text Domain: byKerm.ru
 @import "scss/footer";
 @import "scss/media";
 
+.catalog {
+	padding: 120px 0;
+	&__title {
+		letter-spacing: 1.3px;
+		font-size: $fz_1;
+		font-weight: 700;
+		font-family: Raleway;
+		margin-bottom: 80px;
+	}
+	&__wrapp {
+		display: grid;
+		grid-template-columns: 530px 530px;
+		grid-row-gap: 30px;
+		grid-column-gap: 34px;
+	}
+	&__item {
+		
+	}	
+}
+.catalog-item {
+	position: relative;
+	width: 530px;
+	height: 268px;
+	&__img {
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 440px;
+		height: 234px;
+		z-index: 1;
+	}
+	&__name {
+		position: absolute;
+		z-index: 2;
+		left: 80px;
+		bottom: 0;
+		display: block;
+		background: $color_1;
+		width: 435px;
+		height: 68px;
+		padding-left: 53px;
+		border-width: 0 4px 4px 0;
+		border-style: solid;
+		border-color: $color_4;
+		transform: skew(-25deg);
+		span {
+			display: block;
+			transform: skew(25deg);
+			line-height: 68px;
+			font-size: $fz_3;
+			font-weight: 700;
+			letter-spacing: 0.24px;
+		}
+	}
+}
+.catalog-item:nth-child(1) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-1.jpg');	
+		&:hover {
+			background: url('./files/imgs/category/catalog-1H.jpg');
+		}
+	}
+}
+.catalog-item:nth-child(2) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-2.jpg') no-repeat;	
+		&:hover {
+			background: url('./files/imgs/category/catalog-2H.jpg');
+		}
+	}
+}
+.catalog-item:nth-child(3) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-3.jpg') no-repeat;	
+		&:hover {
+			background: url('./files/imgs/category/catalog-3H.jpg');
+		}
+	}
+}
+.catalog-item:nth-child(4) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-4.jpg') no-repeat;	
+		&:hover {
+			background: url('./files/imgs/category/catalog-4H.jpg');
+		}
+	}
+}
+.catalog-item:nth-child(5) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-5.jpg') no-repeat;	
+		&:hover {
+			background: url('./files/imgs/category/catalog-5H.jpg');
+		}
+	}
+}
+.catalog-item:nth-child(6) {
+	.catalog-item__img {
+		background: url('./files/imgs/category/catalog-6.jpg') no-repeat;	
+		&:hover {
+			background: url('./files/imgs/category/catalog-6H.jpg');
+		}
+	}
+}
