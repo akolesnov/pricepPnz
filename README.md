@@ -1,1 +1,1 @@
-# pricepPnz
+# pricep
