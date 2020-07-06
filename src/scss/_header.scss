@@ -10,7 +10,6 @@
 	&__contact-link {
 		font-size: $fz_5;
 		font-weight: 400;
-		// color: $color_3;
 		line-height: 39px;
 		font-family: 'Raleway';
 		i {
@@ -43,13 +42,14 @@
 	span {
 		position: absolute;
 		top: 3px;
-		left: 17px;
+		left: 15px;
 		width: 15px;
 		height: 15px;
 		border-radius: 50%;
 		font-size: $fz_6;
 		border: 1px solid $def-color;
 		text-align: center;
+	  	background: $color_1;
 	}
 }
 .menu {
@@ -65,7 +65,11 @@
 		font-size: $fz_5;
 		font-weight: 700;
 		letter-spacing: 0.13px;
-		line-height: 64px;
+	  	line-height: 64px;
+	  	//&:hover {
+		//  border-bottom: 2px solid $color_4;
+		//
+		//}
 	}
 }
 

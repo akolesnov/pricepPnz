@@ -57,6 +57,17 @@
 
 @font-face {
   font-family: 'Raleway';
+  src: url('Raleway-SemiBold.eot');
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+  url('./files/fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/Raleway-SemiBold.woff') format('woff'),
+  url('./files/fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
   src: url('Raleway-ExtraBold.eot');
   src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
   url('./files/fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
@@ -72,7 +83,7 @@
 $def-color: #2A2A2A;
 $color_1: #ffffff;
 $color_2: #00000029;
-// $color_3: #2A2A2A;
+$color_3: #F0F0F0;
 $color_4: #008736;
 $color_5: #393939;
 $color_6: #39393933;
@@ -86,7 +97,8 @@ $fz_4: 18px;
 $fz_5: 16px;
 $fz_6: 13px;
 $fz_7: 112px;
-
+$fz_8: 32px;
+$fz_9: 26px;
 *{
   box-sizing: border-box;
   color: $def-color;
@@ -143,7 +155,7 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1;
   color: $def-color;
   text-decoration: none;
-  font-family: Raleway-Bold;
+  font-family: Raleway;
 }
 
 p, span, a{
@@ -155,7 +167,6 @@ p, span, a{
   text-decoration: none;
 
   &:hover{
-    color: $def-color;
     text-decoration: none;
   }
 }
