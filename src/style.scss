@@ -15,35 +15,35 @@ Text Domain: byKerm.ru
 
 .slider {
 	position: relative;
-  	form {
-	  	position: absolute;
-	  	top: 10px;
-	  	z-index: 9;
-	  	right: calc(50% - 549px);
+		form {
+			position: absolute;
+			top: 10px;
+			z-index: 9;
+			right: calc(50% - 549px);
 	}
 }
 .slide-info {
-  width: 534px;
-  min-height: 202px;
-  box-shadow: 0px 0px 24px #39393933;
-  background: rgba(236, 236, 236, .9);
-  border-left: 4px solid $color_4;
-  padding: 32px 20px 25px 50px;
-  &__title {
+	width: 534px;
+	min-height: 202px;
+	box-shadow: 0px 0px 24px #39393933;
+	background: rgba(236, 236, 236, .9);
+	border-left: 4px solid $color_4;
+	padding: 32px 20px 25px 50px;
+	&__title {
 	font-size: $fz_2;
 	font-weight: 800;
 	line-height: 33px;
 	margin-bottom: 20px;
-  }
-  &__text {
+	}
+	&__text {
 	font-size: $fz_5;
 	margin-bottom: 50px;
 
-  }
-  &__link {
+	}
+	&__link {
 	font-size: $fz_5;
 	text-decoration: underline;
-  }
+	}
 }
 .carousel {
 	position: relative;
@@ -53,7 +53,7 @@ Text Domain: byKerm.ru
 		background: url("./files/imgs/slide1.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
-	  	._container {
+			._container {
 			display: flex;
 			justify-content: flex-end;
 			height: 420px;
@@ -61,23 +61,23 @@ Text Domain: byKerm.ru
 			padding-top: 10px;
 			padding-bottom: 40px;
 
-	  }
+		}
 	}
 	.slick-dots {
 		position: absolute;
 		bottom: 0;
-	  	left: calc(50% - 549px);
-	  	text-align: left;
-	  	max-width: 1098px;
+			left: calc(50% - 549px);
+			text-align: left;
+			max-width: 1098px;
 
 		.slick-active {
-		  background: $color_4;
+			background: $color_4;
 		}
-	  	li {
-		  width: 6px;
-		  height: 6px;
-		  background: $color_1;
-		  border-radius: 50%;
+			li {
+			width: 6px;
+			height: 6px;
+			background: $color_1;
+			border-radius: 50%;
 		}
 	}
 }
@@ -107,7 +107,6 @@ Text Domain: byKerm.ru
 		grid-template-columns: 346px 158px 158px 346px;
 		grid-template-rows: 322px 322px;
 		grid-gap: 30px;
-
 	}
 }
 .job-item {
@@ -140,7 +139,6 @@ Text Domain: byKerm.ru
 	&__name {
 		font-size: $fz_3;
 		font-weight: 700;
-		font-family: Raleway;
 		letter-spacing: 0.24px;
 		margin-bottom: 24px;
 	}
@@ -148,7 +146,6 @@ Text Domain: byKerm.ru
 		font-size: $fz_5;
 		line-height: 24px;
 		font-weight: 400;
-		font-family: Raleway;
 	}
 	&:hover {
 		border-top: 8px solid $color_4;
@@ -187,7 +184,7 @@ Text Domain: byKerm.ru
 		line-height: 24px;
 		font-weight: 400;
 		margin-bottom: 16px;
-	  	max-width: 610px;
+			max-width: 610px;
 	}
 	&__list {
 
@@ -196,7 +193,7 @@ Text Domain: byKerm.ru
 		display: flex;
 		padding-left: 44px;
 		position: relative;
-	  	max-width: 610px;
+			max-width: 610px;
 		span {
 			position: absolute;
 			top: 0;
@@ -218,17 +215,17 @@ Text Domain: byKerm.ru
 	background-size: cover;
 	padding-top: 120px;
 	padding-bottom: 100px;
-  	position:relative;
+		position:relative;
 	&:before {
-	  	content: '';
-	  	display: block;
-	  	background: $color_1;
-	  	position: absolute;
+			content: '';
+			display: block;
+			background: $color_1;
+			position: absolute;
 		top: 236px;
-	  	height: 158px;
-	  	width: 100%;
+			height: 158px;
+			width: 100%;
 	}
-  	&__title {
+		&__title {
 		margin-bottom: 80px;
 	}
 
@@ -256,12 +253,12 @@ Text Domain: byKerm.ru
 	}
 }
 .prev, .next {
-  z-index: 9;
-  font-size: $fz_3;
-  font-weight: 700;
-  position: absolute;
-  left: 500px;
-  color: $color_2;
+	z-index: 9;
+	font-size: $fz_3;
+	font-weight: 700;
+	position: absolute;
+	left: 500px;
+	color: $color_2;
 }
 .contacts {
 	position: relative;
@@ -393,57 +390,57 @@ Text Domain: byKerm.ru
 }
 /*--------страница товара------------*/
 .product {
-  padding-top: 30px;
-  padding-bottom: 120px;
-  &__title {
-    letter-spacing: 1.3px;
+	padding-top: 30px;
+	padding-bottom: 120px;
+	&__title {
+		letter-spacing: 1.3px;
 	margin-bottom: 80px;
-  }
-  &__wrapp {
-    display: flex;
-  }
-  &__img {
-  	overflow: hidden;
+	}
+	&__wrapp {
+		display: flex;
+	}
+	&__img {
+		overflow: hidden;
 	max-width: 534px;
 	width: 50%;
-    img {
-	  width: 100%;
-    }
-  }
-  &__info-line {
+		img {
+		width: 100%;
+		}
+	}
+	&__info-line {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 32px;
-  }
-  &__info {
+	}
+	&__info {
 	padding-left: 30px;
 	width: 564px;
 	.green-button {
-	  display: block;
-	  width: 248px;
-	  height: 62px;
-	  box-shadow: 0px 0px 24px #00000029;
-	  position: relative;
-	  background: $color_4;
-	  cursor: pointer;
-	  padding-left: 43px;
+		display: block;
+		width: 248px;
+		height: 62px;
+		box-shadow: 0px 0px 24px #00000029;
+		position: relative;
+		background: $color_4;
+		cursor: pointer;
+		padding-left: 43px;
 
-	  span {
+		span {
 		font-size: $fz_3;
 		font-weight: 700;
 		line-height: 62px;
 		color: $color_1;
-	  }
-	  i {
+		}
+		i {
 
 		color: $color_1;
 		padding-left: 45px;
 		&:before {
-		  line-height: 62px;
-		  font-size: 30px;
+			line-height: 62px;
+			font-size: 30px;
 		}
-	  }
-	  &::before {
+		}
+		&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -453,22 +450,22 @@ Text Domain: byKerm.ru
 		height: 62px;
 		border: 1px solid $color_4;
 		z-index: -1;
-	  }
+		}
 	}
-  }
-  &__price {
+	}
+	&__price {
 	font-size: $fz_8;
 	font-weight: 700;
 	display: block;
-  }
+	}
 }
 
 .tabs {
-  margin-bottom: 140px;
-  &__items {
+	margin-bottom: 140px;
+	&__items {
 	display: flex;
-  }
-  &__link {
+	}
+	&__link {
 	width: 50%;
 	display: block;
 	cursor: pointer;
@@ -479,60 +476,60 @@ Text Domain: byKerm.ru
 	background: $color_3;
 	outline: none;
 	border-bottom: 1px solid $color_4;
-  }
-  &__body {
+	}
+	&__body {
 
-  }
-  &__block {
+	}
+	&__block {
 	min-height: 500px;
 	padding-top: 28px;
 	table {
-	  border-collapse: collapse;
-	  td {
+		border-collapse: collapse;
+		td {
 		border: 1px solid $color_4;
 		font-size: $fz_5;
 		font-weight: 400;
 		padding: 14px 5px 14px 14px;
-	  }
-	  .td-left {
+		}
+		.td-left {
 		font-weight: 700;
-	  }
+		}
 	}
 	span {
-	  font-size: $fz_5;
-	  font-weight: 400;
-	  margin-bottom: 40px;
-	  display: block;
+		font-size: $fz_5;
+		font-weight: 400;
+		margin-bottom: 40px;
+		display: block;
 	}
 	p {
-	  font-size: $fz_5;
-	  font-weight: 400;
-	  line-height: 32px;
+		font-size: $fz_5;
+		font-weight: 400;
+		line-height: 32px;
 	}
-  }
+	}
 }
 .active {
-  background: $color_1;
-  border-bottom: none;
-  border-top: 1px solid $color_4;
-  border-right: 1px solid $color_4;
-  border-left: 1px solid $color_4;
+	background: $color_1;
+	border-bottom: none;
+	border-top: 1px solid $color_4;
+	border-right: 1px solid $color_4;
+	border-left: 1px solid $color_4;
 }
 .other-product {
-  &__title {
+	&__title {
 	letter-spacing: 1.3px;
 	margin-bottom: 80px;
-  }
-  &__carousel {
+	}
+	&__carousel {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 124px;
-  }
+	}
 
 }
 .tovar {
-  width: 346px;
-  &__img {
+	width: 346px;
+	&__img {
 	box-shadow: 0px 0px 24px #2A2A2A33;
 	position: relative;
 	overflow: hidden;
@@ -540,38 +537,38 @@ Text Domain: byKerm.ru
 	img {
 
 	}
-  }
-  &__name {
+	}
+	&__name {
 	font-size: $fz_3;
 	font-weight: 700;
 	letter-spacing: 0.24px;
 	margin-bottom: 40px;
-  }
-  &__price {
+	}
+	&__price {
 	text-align: right;
 	margin-bottom: 40px;
 	span {
-	  font-size: $fz_2;
-	  font-weight: 700;
-	  letter-spacing: 0.34px;
+		font-size: $fz_2;
+		font-weight: 700;
+		letter-spacing: 0.34px;
 	}
-  }
-  &__btns {
+	}
+	&__btns {
 	display: flex;
 	justify-content: space-between;
 	.more-btn {
-	  display: block;
-	  width: 248px;
-	  height: 62px;
-	  box-shadow: 0px 0px 24px #00000029;
-	  position: relative;
-	  background: $color_1;
-	  cursor: pointer;
-	  padding-left: 62px;
-	  font-size: $fz_3;
-	  font-weight: 700;
-	  line-height: 62px;
-	  &::before {
+		display: block;
+		width: 248px;
+		height: 62px;
+		box-shadow: 0px 0px 24px #00000029;
+		position: relative;
+		background: $color_1;
+		cursor: pointer;
+		padding-left: 62px;
+		font-size: $fz_3;
+		font-weight: 700;
+		line-height: 62px;
+		&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -582,25 +579,25 @@ Text Domain: byKerm.ru
 		border: 1px solid $color_4;
 		z-index: -1;
 		border: 1px solid #008736;
-	  }
+		}
 	}
 	.add-btn {
-	  display: block;
-	  width: 60px;
-	  height: 62px;
-	  box-shadow: 0px 0px 24px #00000029;
-	  position: relative;
-	  background: $color_4;
-	  cursor: pointer;
-	  text-align: center;
-	  i {
+		display: block;
+		width: 60px;
+		height: 62px;
+		box-shadow: 0px 0px 24px #00000029;
+		position: relative;
+		background: $color_4;
+		cursor: pointer;
+		text-align: center;
+		i {
 		color: $color_1;
 		&:before {
-		  line-height: 62px;
-		  font-size: 30px;
+			line-height: 62px;
+			font-size: 30px;
 		}
-	  }
-	  &::before {
+		}
+		&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -611,7 +608,7 @@ Text Domain: byKerm.ru
 		border: 1px solid $color_4;
 		z-index: -1;
 		border: 1px solid #008736;
-	  }
+		}
 	}
-  }
+	}
 }
