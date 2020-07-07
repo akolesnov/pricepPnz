@@ -8,20 +8,21 @@ $(document).ready(function(){
 });
 });
 
+//---карусель поставщиков
 $(document).ready(function(){
   $('.providers-carousel').slick({
     	autoplay: false,
     	slidesToShow: 4,
 			responsive: [
 					{
-							breakpoint: 900,
+							breakpoint: 1024,
 							settings: {
 									slidesToShow: 3,
 									slidesToScroll: 3
 							}
 					},
 					{
-							breakpoint: 600,
+							breakpoint: 750,
 							settings: {
 									slidesToShow: 2,
 									slidesToScroll: 2
@@ -29,6 +30,28 @@ $(document).ready(function(){
 					}
 			]
   });
+});
+
+//---карусель дополнительное оборудование
+$(document).ready(function(){
+		$('.other-product__carousel').slick({
+				autoplay: false,
+				slidesToShow: 3,
+				responsive: [
+						{
+								breakpoint: 1024,
+								settings: {
+										slidesToShow: 2,
+								}
+						},
+						{
+								breakpoint: 750,
+								settings: {
+										slidesToShow: 1,
+								}
+						}
+				]
+		});
 });
 
 //табы в товарах

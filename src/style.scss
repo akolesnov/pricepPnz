@@ -11,7 +11,7 @@ Text Domain: byKerm.ru
 @import "scss/header";
 @import "scss/index";
 @import "scss/footer";
-@import "scss/media";
+
 
 .slider {
 	position: relative;
@@ -30,14 +30,14 @@ Text Domain: byKerm.ru
 	border-left: 4px solid $color_4;
 	padding: 32px 20px 25px 50px;
 	&__title {
-	font-size: $fz_2;
-	font-weight: 800;
-	line-height: 33px;
-	margin-bottom: 20px;
+	  font-size: $fz_2;
+	  font-weight: 800;
+	  line-height: 33px;
+	  margin-bottom: 20px;
 	}
 	&__text {
-	font-size: $fz_5;
-	margin-bottom: 50px;
+	  font-size: $fz_5;
+	  margin-bottom: 50px;
 
 	}
 	&__link {
@@ -53,31 +53,29 @@ Text Domain: byKerm.ru
 		background: url("./files/imgs/slide1.jpg") no-repeat;
 		background-position: center;
 		background-size: cover;
-			._container {
+	  	._container {
 			display: flex;
 			justify-content: flex-end;
 			height: 420px;
 			align-items: flex-end;
 			padding-top: 10px;
 			padding-bottom: 40px;
-
 		}
 	}
 	.slick-dots {
 		position: absolute;
 		bottom: 0;
-			left: calc(50% - 549px);
-			text-align: left;
-			max-width: 1098px;
-
+	  	left: calc(50% - 549px);
+	  	text-align: left;
+	  	max-width: 1098px;
 		.slick-active {
 			background: $color_4;
 		}
-			li {
-			width: 6px;
-			height: 6px;
-			background: $color_1;
-			border-radius: 50%;
+		li {
+		  width: 6px;
+		  height: 6px;
+		  background: $color_1;
+		  border-radius: 50%;
 		}
 	}
 }
@@ -125,7 +123,8 @@ Text Domain: byKerm.ru
 		grid-column: 1 / 3;
 	}
 	&:nth-child(5) {
-		grid-column: 3 / 5;
+		grid-row: 2 / 3;
+	  	grid-column: 3 / 5;
 	}
 	&__img {
 		height: 138px;
@@ -146,6 +145,17 @@ Text Domain: byKerm.ru
 		font-size: $fz_5;
 		line-height: 24px;
 		font-weight: 400;
+	  	margin-bottom: 20px;
+	}
+  	&__link {
+	  color: $color_4;
+	  font-size: $fz_4;
+	  font-weight: 700;
+	  text-decoration: underline;
+	  display: none;
+	}
+  	&:hover &__link {
+	  display: block;
 	}
 	&:hover {
 		border-top: 8px solid $color_4;
@@ -193,7 +203,7 @@ Text Domain: byKerm.ru
 		display: flex;
 		padding-left: 44px;
 		position: relative;
-			max-width: 610px;
+	  	max-width: 610px;
 		span {
 			position: absolute;
 			top: 0;
@@ -215,17 +225,17 @@ Text Domain: byKerm.ru
 	background-size: cover;
 	padding-top: 120px;
 	padding-bottom: 100px;
-		position:relative;
+  	position:relative;
 	&:before {
-			content: '';
-			display: block;
-			background: $color_1;
-			position: absolute;
+		content: '';
+		display: block;
+		background: $color_1;
+		position: absolute;
 		top: 236px;
-			height: 158px;
-			width: 100%;
-	}
-		&__title {
+		height: 158px;
+		width: 100%;
+		}
+  	&__title {
 		margin-bottom: 80px;
 	}
 
@@ -370,12 +380,12 @@ Text Domain: byKerm.ru
 }
 .conditions {
 	display: flex;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	&__text {
-
-		.rent-info__text {
-			margin-bottom: 16px;
-		}
+	  width: 520px;
+	  .rent-info__text {
+		  margin-bottom: 16px;
+	  }
 	}
 	&__img {
 		min-width: 346px;
@@ -612,3 +622,6 @@ Text Domain: byKerm.ru
 	}
 	}
 }
+
+
+@import "scss/media";
