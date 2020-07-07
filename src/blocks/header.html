@@ -19,10 +19,21 @@
 	<div class="header__menu">	
 		<div class="_container">	
 			<div class="menu">
+				<div class="burger-menu" onclick="myFunction(this)">
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>
+					<span class="burger-menu__line"></span>		
+				</div>
 				<a href="./index.html" class="header__logo">
 					<img src="../files/imgs/logo.png" alt="ПрицепЦентр">
 				</a>
-				<nav class="menu__body">
+				<a href="" class="cart menu__cart">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<span>2</span>
+				</a>
+
+
+				<nav class="menu__body" id="menu">
 					<ul class="menu__list">
 						<li><a href="../index.html" class="menu__link">Главная</a></li>
 						<li><a href="./catalog.html" class="menu__link">Каталог</a></li>
@@ -35,6 +46,6 @@
 			</div>
 		</div>	
 	</div>
-  
+	
 
 </header>

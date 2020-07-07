@@ -1,3 +1,15 @@
+// бургер меню
+
+function myFunction(y){
+	var x = document.getElementById("menu");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+		y.classList.toggle("change");
+}
+// --------------------------------
 
 $(document).ready(function(){
   $('.carousel').slick({
@@ -13,6 +25,7 @@ $(document).ready(function(){
   $('.providers-carousel').slick({
     	autoplay: false,
     	slidesToShow: 4,
+			arrows: false,
 			responsive: [
 					{
 							breakpoint: 1024,
@@ -37,6 +50,7 @@ $(document).ready(function(){
 		$('.other-product__carousel').slick({
 				autoplay: false,
 				slidesToShow: 3,
+				arrows: false,
 				responsive: [
 						{
 								breakpoint: 1024,
