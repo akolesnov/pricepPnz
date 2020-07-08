@@ -9,8 +9,27 @@ function myFunction(y){
 	}
 		y.classList.toggle("change");
 }
-// --------------------------------
 
+// функция для модального окна-----
+
+var modal = document.getElementById("modal");
+var btn = document.getElementById("popup-btn");
+var span = document.getElementsByClassName("close-btn")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Слайдер на главной
 $(document).ready(function(){
   $('.carousel').slick({
     autoplay: true,
