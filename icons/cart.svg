@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24.725" viewBox="0 0 26 24.725">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008736;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #008736;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="cart" transform="translate(-0.5 -0.321)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M14.182,31.074A1.091,1.091,0,1,1,13.091,30,1.082,1.082,0,0,1,14.182,31.074Z" transform="translate(-2.864 -8.102)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M30.682,31.074A1.091,1.091,0,1,1,29.591,30,1.082,1.082,0,0,1,30.682,31.074Z" transform="translate(-7.364 -8.102)"/>
+    <path id="Path_3" data-name="Path 3" class="cls-1" d="M5.864,1.5,8.787,15.875A2.174,2.174,0,0,0,10.969,17.6h10.6a2.174,2.174,0,0,0,2.182-1.728L25.5,6.868H6.955"/>
+    <path id="Path_106" data-name="Path 106" class="cls-2" d="M1.5,1.5H5.864L8.787,15.875A2.174,2.174,0,0,0,10.969,17.6h10.6a2.174,2.174,0,0,0,2.182-1.728L25.5,6.868H6.955"/>
+  </g>
+</svg>
