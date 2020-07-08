@@ -63,8 +63,23 @@
 		height: 2px;
 		background: $color_4;
 		margin-bottom: 5px;
-		&:nth-child(3) {
+	  	transition: .3s;
+	  	.change & {
+			background: $color_4;
+			transform: rotate(-45deg) translate(0px, 10px);
+
+	  	}
+		&:nth-child(2) {
+		  .change & {
+			opacity: 0;
+		  }
+
+		}
+	  	&:nth-child(3) {
 			margin-bottom: 0;
+			.change & {
+			  transform: rotate(45deg) translate(0px, -10px) ;
+			}
 		}
 	}
 }
@@ -78,11 +93,16 @@
 		}
 	}
 	&__body {
-		flex: auto;
+	  	flex: auto;
+	  	transition: .5s;
+	  	.header__contacts {
+			display: none;
+		}
 	}
 	&__list {
 		display: flex;
 		justify-content: space-between;
+	  	transition: .5s;
 	}
 	&__link {
 		font-size: $fz_5;

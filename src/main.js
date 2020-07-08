@@ -25,8 +25,10 @@ $(document).ready(function(){
   $('.providers-carousel').slick({
     	autoplay: false,
     	slidesToShow: 4,
-			arrows: false,
-			responsive: [
+			arrows: true,
+			prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+			nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
+		responsive: [
 					{
 							breakpoint: 1024,
 							settings: {
@@ -45,21 +47,35 @@ $(document).ready(function(){
   });
 });
 
+//---слайдер в странице товар над таблицей
+$(document).ready(function(){
+		$('.product__img').slick({
+				autoplay: false,
+				slidesToShow: 1,
+				arrows: true,
+				prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+				nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
+		});
+});
+
 //---карусель дополнительное оборудование
 $(document).ready(function(){
 		$('.other-product__carousel').slick({
 				autoplay: false,
+				infinity: true,
+				arrows: true,
+				prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+				nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
 				slidesToShow: 3,
-				arrows: false,
 				responsive: [
 						{
-								breakpoint: 1024,
+								breakpoint: 1100,
 								settings: {
 										slidesToShow: 2,
 								}
 						},
 						{
-								breakpoint: 750,
+								breakpoint: 768,
 								settings: {
 										slidesToShow: 1,
 								}

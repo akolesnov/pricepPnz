@@ -11,6 +11,7 @@ Text Domain: byKerm.ru
 @import "scss/header";
 @import "scss/index";
 @import "scss/footer";
+@import "scss/modal";
 
 
 .slider {
@@ -65,9 +66,9 @@ Text Domain: byKerm.ru
 	.slick-dots {
 		position: absolute;
 		bottom: 0;
-			left: calc(50% - 549px);
-			text-align: left;
-			max-width: 1098px;
+		left: calc(50% - 549px);
+		text-align: left;
+		max-width: 1098px;
 		.slick-active {
 			background: $color_4;
 		}
@@ -219,6 +220,15 @@ Text Domain: byKerm.ru
 	}
 
 }
+.slick-prev, .slick-next {
+  border: none;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 700;
+  z-index: 9;
+}
+
 .providers {
 	background: url("./files/imgs/CTE-bill.jpg") no-repeat;
 	background-position: center;
@@ -238,11 +248,24 @@ Text Domain: byKerm.ru
 		&__title {
 		margin-bottom: 80px;
 	}
+  	._container {
+	  position: relative;
+	}
+  	.slick-prev, .slick-next {
+		color: $color_5;
+	  	top: 80px;
+	  	font-size: $fz_3;
+	}
+  	.slick-prev {
+	 	left: -20px;
+	}
+  	.slick-next {
+	  	right: 10px;
+	}
 
 }
 .providers-carousel {
 	.provider {
-		max-width: 260px;
 		outline: none;
 		&__img {
 			height: 158px;
@@ -260,14 +283,6 @@ Text Domain: byKerm.ru
 			padding-top: 40px;
 		}
 	}
-}
-.prev, .next {
-	z-index: 9;
-	font-size: $fz_3;
-	font-weight: 700;
-	position: absolute;
-	left: 500px;
-	color: $color_2;
 }
 .contacts {
 	position: relative;
@@ -428,6 +443,17 @@ Text Domain: byKerm.ru
 		img {
 			width: 100%;
 		}
+		.slick-prev, .slick-next {
+		  color: $color_1;
+		  top: 180px;
+
+		}
+		.slick-prev {
+		  left: 10px;
+		}
+		.slick-next {
+		  right: 10px;
+		}
 	}
 	&__info-line {
 		display: flex;
@@ -538,22 +564,34 @@ Text Domain: byKerm.ru
 	margin-bottom: 80px;
 	}
 	&__carousel {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 124px;
+		margin-bottom: 124px;
+		.slick-prev, .slick-next {
+		  color: $color_1;
+		  top: 80px;
+
+		}
+		.slick-prev {
+		  left: 20px;
+		}
+		.slick-next {
+		  right: 20px;
+		}
 	}
 
 }
 .tovar {
 	width: 346px;
+  	margin: 0 10px;
 	&__img {
-	box-shadow: 0px 0px 24px #2A2A2A33;
-	position: relative;
-	overflow: hidden;
-	margin-bottom: 20px;
-	img {
+	  box-shadow: 0px 0px 24px #2A2A2A33;
+	  position: relative;
+	  overflow: hidden;
+	  margin-bottom: 20px;
+	  img {
 
-	}
+		width: 100%;
+		height: 100%;
+	  }
 	}
 	&__name {
 	font-size: $fz_3;
@@ -615,18 +653,66 @@ Text Domain: byKerm.ru
 		}
 		}
 		&::before {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 4px;
-		left: 4px;
-		width: 60px;
-		height: 62px;
-		border: 1px solid $color_4;
-		z-index: -1;
-		border: 1px solid #008736;
+		  content: '';
+		  display: block;
+		  position: absolute;
+		  top: 4px;
+		  left: 4px;
+		  width: 60px;
+		  height: 62px;
+		  border: 1px solid $color_4;
+		  z-index: -1;
+		  border: 1px solid #008736;
 		}
 	}
+	}
+}
+
+//-----Страница подразделов---------------
+
+.subsection {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  &__title {
+	margin-bottom: 80px;
+  }
+  .tovar-wrapp {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: auto;
+	grid-row-gap: 60px;
+	padding-bottom: 80px;
+  }
+}
+
+.pagination {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	&__wrapp {
+	  	display: flex;
+	  	margin: 0 30px;
+	  	.action {
+		  	background: $color_4;
+		}
+	  	li {
+		  	a {
+			  	font-size: $fz_3;
+			  	font-weight: 700;
+			  	width: 36px;
+			  	height: 36px;
+			  	line-height: 36px;
+			  	text-align: center;
+			  	border: 1px solid $color_4;
+			  	display: block;
+			  	cursor: pointer;
+		  	}
+		}
+	}
+  	&__btn {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
 	}
 }
 

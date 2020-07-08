@@ -165,7 +165,7 @@ p, span, a{
 	color: $def-color;
 	font-family: Raleway;
 	text-decoration: none;
-
+	outline: none;
 	&:hover{
 		text-decoration: none;
 	}

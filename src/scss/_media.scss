@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1100px){
 	._container {
 		max-width: 750px;
 	}
@@ -6,6 +6,34 @@
 		font-size: $fz_2;
 		letter-spacing: 0.78px;
 	}
+	.modal {
+	  	width: 520px;
+	  	height: 509px;
+	  	top: calc(50% - 250px);
+	  	padding: 40px 60px;
+	  	&__title {
+			font-size: $fz_9;
+			line-height: 30px;
+	  	}
+	}
+	.input-wrapp {
+	  margin-bottom: 28px;
+	  label {
+		font-size: $fz_4;
+		font-weight: 700;
+		line-height: 24px;
+		display: inline-block;
+		margin-bottom: 16px;
+	  }
+	  input {
+		display: block;
+		width: 454px;
+		height: 38px;
+		border: 1px solid $color_4;
+		outline: none;
+	  }
+	}
+
 	.header {
 		&__contacts {
 			width: 100%;
@@ -38,6 +66,12 @@
 		form {
 			//right: 9px;
 			right: calc(50% - 375px);
+		}
+	}
+  	.carousel {
+		.slick-dots {
+		  	left: calc(50% - 375px);
+		  	max-width: 750px;
 		}
 	}
 	.footer {
@@ -186,8 +220,18 @@
 		top: 176px;
 		}
 		&__title {
-		margin-bottom: 60px;
+			margin-bottom: 60px;
 		}
+	  	.prev, .next {
+		  top: 158px;
+		}
+	}
+	.providers-carousel {
+	  .provider {
+		&__name {
+		  max-width: 250px;
+		}
+	  }
 	}
 
 	.contacts-info {
@@ -349,6 +393,16 @@
 		margin-bottom: 33px;
 		}
 	}
+	.subsection {
+		padding-bottom: 80px;
+	  	&__title {
+			margin-bottom: 60px;
+	  	}
+	  	.tovar-wrapp {
+			grid-template-columns: 1fr 1fr;
+	  	}
+	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -358,6 +412,22 @@
 	.title {
 		font-size: $fz_2;
 		letter-spacing: 0.78px;
+	}
+  	.modal-fade {
+	  	background: $color_1;
+	}
+	.modal {
+	  	width: 338px;
+	  	height: 100%;
+	  	top: 0;
+	  	padding: 40px 11px;
+	  	box-shadow: none;
+	  	&__title {
+		  	margin-bottom: 28px;
+	  	}
+	  	&__politics-text {
+		  padding-right: 70px;
+		}
 	}
 	.header {
 		&__contacts {
@@ -382,10 +452,24 @@
 			display: none;
 			position: absolute;
 			top: 54px;
+		  	padding-top: 30px;
 			left: 0;
 			height: 100vh;
 			width: 100%;
 			z-index: 99;
+		  	.header__contacts {
+			  display: block;
+			  flex-direction: column;
+			  width: 338px;
+			  margin: 0 auto;
+			  padding-top: 30px;
+			}
+		  	.header__contact-link {
+			  display: block;
+			  margin-right: 0;
+			  height: 40px;
+
+			}
 		}
 		&__list {
 			background: $color_1;
@@ -393,6 +477,17 @@
 			width: 338px;
 			margin: 0 auto;
 		}
+	  	&__link {
+		  line-height: 36px;
+		  height: 36px;
+		  &:hover {
+			border: none;
+		  }
+		}
+	}
+  	.active-link {
+	  border-left: 2px solid $color_4;
+	  padding-left: 12px;
 	}
 	.footer {	
 		&__text {
@@ -415,6 +510,10 @@
 		}
 	}
 	.carousel {
+		.slick-dots {
+		   left: 10px;
+		   max-width: 338px;
+		}
 		.item {
 			background-size: cover;
 			._container {
@@ -557,6 +656,7 @@
 			max-width: 169px;
 			&__name {
 				padding-top: 20px;
+			  	max-width: 160px;
 			}
 		}
 	}
@@ -668,7 +768,32 @@
 			margin-bottom: 64px;
 		}
 	}
-	
+	.subsection {
+	  	padding-bottom: 60px;
+	  	&__title {
+			margin-bottom: 40px;
+		}
+	  	.tovar-wrapp {
+			grid-template-columns: 338px;
+	  	}
+	}
+  	.pagination {
+	  	flex-direction: column;
+	  	&__wrapp {
+		  	margin: 20px 0;
+	  	}
+	}
+	.tovar {
+		width: 338px;
+	  	margin: 0;
+		&__img {
+		  margin-bottom: 20px;
+		}
 
+		&__name {
+		  font-size: $fz_4;
+		  margin-bottom: 33px;
+		}
+	}
 }
 
