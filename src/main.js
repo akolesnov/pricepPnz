@@ -10,24 +10,22 @@ function myFunction(y){
 		y.classList.toggle("change");
 }
 
-// функция для модального окна-----
+// функция для модального окна
 
-var modal = document.getElementById("modal");
-var btn = document.getElementById("popup-btn");
-var span = document.getElementsByClassName("close-btn")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// let modal = document.getElementById("modal");
+// let btn = document.getElementById("popup-btn");
+// let span = document.getElementsByClassName("close-btn");
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 // Слайдер на главной
 $(document).ready(function(){
@@ -36,7 +34,7 @@ $(document).ready(function(){
     dots: true,
     arrows: false,
 
-});
+	});
 });
 
 //---карусель поставщиков
@@ -47,7 +45,7 @@ $(document).ready(function(){
 			arrows: true,
 			prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
 			nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
-		responsive: [
+			responsive: [
 					{
 							breakpoint: 1024,
 							settings: {
