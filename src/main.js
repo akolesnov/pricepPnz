@@ -12,20 +12,20 @@ function myFunction(y){
 
 // функция для модального окна
 
-// let modal = document.getElementById("modal");
-// let btn = document.getElementById("popup-btn");
-// let span = document.getElementsByClassName("close-btn");
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+var modal = document.getElementById("modal");
+var btn = document.getElementById("popup-btn");
+var span = document.getElementsByClassName("close-btn")[0];
+btn.onclick = function() {
+   modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Слайдер на главной
 $(document).ready(function(){
@@ -35,37 +35,31 @@ $(document).ready(function(){
     arrows: false,
 
 	});
-});
-
-//---карусель поставщиков
-$(document).ready(function(){
-  $('.providers-carousel').slick({
-    	autoplay: false,
-    	slidesToShow: 4,
-			arrows: true,
-			prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
-			nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
-			responsive: [
-					{
-							breakpoint: 1024,
-							settings: {
-									slidesToShow: 3,
-									slidesToScroll: 3
-							}
-					},
-					{
-							breakpoint: 750,
-							settings: {
-									slidesToShow: 2,
-									slidesToScroll: 2
-							}
-					}
-			]
-  });
-});
-
-//---слайдер в странице товар над таблицей
-$(document).ready(function(){
+		//---карусель поставщиков
+		$('.providers-carousel').slick({
+				autoplay: false,
+				slidesToShow: 4,
+				arrows: true,
+				prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+				nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
+				responsive: [
+						{
+								breakpoint: 1024,
+								settings: {
+										slidesToShow: 3,
+										slidesToScroll: 3
+								}
+						},
+						{
+								breakpoint: 750,
+								settings: {
+										slidesToShow: 2,
+										slidesToScroll: 2
+								}
+						}
+				]
+		});
+		//---слайдер в странице товар над таблицей
 		$('.product__img').slick({
 				autoplay: false,
 				slidesToShow: 1,
@@ -73,10 +67,7 @@ $(document).ready(function(){
 				prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
 				nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
 		});
-});
-
-//---карусель дополнительное оборудование
-$(document).ready(function(){
+		//---карусель дополнительное оборудование
 		$('.other-product__carousel').slick({
 				autoplay: false,
 				infinity: true,

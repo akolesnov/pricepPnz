@@ -38,16 +38,37 @@
 		display: flex;
 	  	margin-bottom: 34px;
 	  	input[type="checkbox"] {
-	  		border-radius: 0;
-	  		border: 1px solid $color_4;
-	  		width: 18px;
-	  		height: 18px;
+	  		display: none;
 		}
-  	}
+	  	label {
+		  position: relative;
+		  display: inline-block;
+		  cursor: pointer;
+		}
+	  	label:before {
+		  content: "";
+		  display: inline-block;
+		  min-width: 18px;
+		  width: 18px;
+		  height: 18px;
+		  border: 1px solid $color_4;
+		  position: absolute;
+		  left: 0;
+
+		}
+		input[type=checkbox]:checked + label:before {
+			content: "\2713";
+			font-size: 15px;
+			color: $color_4;
+			text-align: center;
+			line-height: 18px;
+		}
+
+	}
   	&__politics-text {
 		font-size: $fz-5;
 		line-height: 28px;
-		padding-left: 18px;
+		padding-left: 36px;
 		display: inline-block;
   	}
 	&__button {
@@ -92,6 +113,39 @@
 		height: 38px;
 		border: 1px solid $color_4;
 		outline: none;
+	}
+}
+.modal-wrap {
+  //display: none;
+}
+.modal-wrap-2 {
+	display: none;
+  	padding-top: 40px;
+  	&__title {
+	  font-size: $fz_9;
+	  font-weight: 800;
+	  line-height: 30px;
+	  margin-bottom: 60px;
+	  text-align: center;
+	}
+  	&__img {
+	  	width: 180px;
+	  	height: 180px;
+	  	position: relative;
+	  	margin: 0 auto 60px auto;
+		img {
+		  	position: absolute;
+		  	height: 100%;
+		  	width: 100%;
+		  	left: 0;
+		  	top: 0;
+		}
+	}
+  	&__text {
+	  	font-size: $fz_5;
+	  	font-weight: 400;
+	  	line-height: 28px;
+	  	text-align: center;
 	}
 }
 

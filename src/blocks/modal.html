@@ -1,22 +1,29 @@
 <div class="modal-fade" id="modal">
 		<div class="modal">
 				<span class="modal__close-btn close-btn">&#10006;</span>
-				<h4 class="modal__title">Заказать звонок</h4>
-				<form action="">
-						<p class="input-wrapp">
-								<label for="">Имя</label><br>
-								<input type="text">
-						</p>
-						<p class="input-wrapp">
-								<label for="">Телефон</label><br>
-								<input type="tel">
-						</p>
-						<div class="modal__politics">
-								<input type="checkbox">
-								<span class="modal__politics-text">Отправляя свои данные, я согласен(-на) с <a href="">Политикой конфиденциальности сайта</a>.</span>
-						</div>
-						<button class="modal__button">Отправить</button>
-				</form>
-
+				<div class="modal-wrap">
+						<h4 class="modal__title">Заказать звонок</h4>
+						<form action="">
+								<p class="input-wrapp">
+										<label for="">Имя</label><br>
+										<input type="text">
+								</p>
+								<p class="input-wrapp">
+										<label for="">Телефон</label><br>
+										<input type="tel">
+								</p>
+								<div class="modal__politics">
+										<input type="checkbox" id="check1">
+										<label for="check1"></label>
+										<span class="modal__politics-text">Отправляя свои данные, я согласен(-на) с <a href="">Политикой конфиденциальности сайта</a>.</span>
+								</div>
+								<button class="modal__button">Отправить</button>
+						</form>
+				</div>
+				<div class="modal-wrap-2">
+						<p class="modal-wrap-2__title">Спасибо за заявку!</p>
+						<div class="modal-wrap-2__img"><img src="../files/imgs/paper-plane.svg" alt=""></div>
+						<p class="modal-wrap-2__text">Наш менеджер скоро с Вами свяжется.</p>
+				</div>
 		</div>
 </div>
