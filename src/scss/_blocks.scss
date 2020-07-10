@@ -26,7 +26,7 @@
 	width: 346px;
 	height: 38px;
 	border: 1px solid $color_4;
-	padding: 9px 16px;
+	padding: 7px 16px;
 	background: $color_1;
 	input[type="search"] {
 		border: none;
@@ -133,19 +133,24 @@
 	height: 130px;
 	box-shadow: 0px 0px 24px #00000029;
 	display: flex;
+  	align-items: center;
 	justify-content: flex-end;
 	position: relative;
 	padding-right: 67px;
 	margin-right: 140px;
 	&__img {
-		font-size: 112px;
-		line-height: 130px;
-		font-weight: 900;
-		color: $color_1;
-		text-shadow: 2px 2px $color_4, 2px -2px $color_4, -2px 2px $color_4, -2px -2px $color_4;
-		margin-right: 55px;
-		&:hover {
-			color: $color_1;
+		//font-size: 112px;
+		//line-height: 130px;
+		//font-weight: 900;
+		//color: $color_1;
+		//text-shadow: 2px 2px $color_4, 2px -2px $color_4, -2px 2px $color_4, -2px -2px $color_4;
+		margin-right: 40px;
+		//&:hover {
+		//	color: $color_1;
+		//}
+	  	img {
+		  width: 55px;
+		  height: 130px;
 		}
 	}
 	&::before {

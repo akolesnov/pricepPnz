@@ -497,8 +497,8 @@
 			margin: 0 auto;
 		}
 	  	&__link {
-		  line-height: 36px;
-		  height: 36px;
+		  line-height: 42px;
+		  height: 42px;
 		  &:hover {
 			border: none;
 		  }
@@ -614,7 +614,7 @@
 			margin-right: 14px;
 		}
 		&__text {
-		  	padding-top: 20px;
+		  	//padding-top: 20px;
 		  	font-size: $fz_9;
 			line-height: 30px;
 		}
