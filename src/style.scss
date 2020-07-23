@@ -632,7 +632,7 @@
 		background: $color_1;
 		cursor: pointer;
 		//padding-left: 62px;
-	  text-align: center;
+	  	text-align: center;
 		font-size: $fz_3;
 		font-weight: 700;
 		line-height: 62px;
@@ -730,6 +730,67 @@
 		font-weight: 400;
 		line-height: 24px;
 	}
+}
+.filter {
+  	&__wrap {
+		background: $color_7;
+	}
+  	&__name {
+	  font-size: $fz_5;
+	  font-weight: 700;
+	  line-height: 24px;
+	}
+  	&__item {
+	  display: flex;
+	  margin-right: 24px;
+	  input[type="checkbox"] {
+		display: none;
+	  }
+	  label {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	  }
+	  label:before {
+		content: "";
+		display: inline-block;
+		min-width: 16px;
+		width: 16px;
+		height: 16px;
+		border: 1px solid $color_4;
+		position: absolute;
+		left: 0;
+		top: 4px;
+
+	  }
+	  input[type=checkbox]:checked + label:before {
+		content: "\2713";
+		font-size: 14px;
+		color: $color_4;
+		text-align: center;
+		line-height: 16px;
+	  }
+	  .checkbox-name {
+		padding-left: 34px;
+		font-size: $fz_5;
+		line-height: 24px;
+		font-weight: 400;
+	  }
+	}
+}
+.filter-btn {
+	&__text {
+	  font-size: $fz_3;
+	  font-weight: 700;
+	  letter-spacing: 0.24px;
+	  line-height: 28px;
+	}
+  	span {
+
+	}
+}
+.checkbox-wrap {
+  display: flex;
 }
 
 
